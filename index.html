@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="inicio">
         <div class="contato">
 
             <div class="emailtel">
@@ -45,22 +45,22 @@
                 <h1>Logistica</h1>
             </div>
             <div class="menu">
-                <a href="">Home</a>
-                <a href="">Sobre nos</a>
-                <a href="">Serviços</a>
-                <a href="">Contato</a>
-                <a href="">inscrever</a>
+                <a href="#inicio">Home</a>
+                <a href="#sobre">Sobre nos</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#contato">Contato</a>
+                <a href="#inscrever">inscrever</a>
             </div>
         </nav>
         <div class="titulo">
             <div class="p">
                 <p>ENVIE QUALQUER COISA PELO MUNDOHIP ANYTHING AROUND THE WORLD</p>
             </div>
-            <button>Contact Us</button>
+            <a class="botao-principal" href="#contato">Contact Us</a>
         </div>
     </header>
     <main>
-        <div class="conteudo">
+        <div class="conteudo" id="sobre">
             <div class="divtextos">
                 <img src="imagem/blog1.jpg" alt="">
             </div>
@@ -72,7 +72,7 @@
             </div>
         </div>
 
-        <div class="conteudo gray">
+        <div class="conteudo gray" id="servicos">
             <div class="column">
                 <div class="information">
                     <div class="informtext">
@@ -165,18 +165,18 @@
                 <img src="imagem/blog1.jpg" alt="">
                 <h4>TRANSPORTE DE CARGA</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique repudiandae</p>
-                <button>Click More</button>
+                <a class="botao-card" href="#contato">Click More</a>
             </div>
             <div class="divtextos2 botao border">
                 <img src="imagem/blog2.jpg" alt="">
                 <h4>TRANSPORTE DE CARGA</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing eliteos magni explicabo beatae eius!</p>
-                <button>Click More</button>
+                <a class="botao-card" href="#contato">Click More</a>
             </div>
         </div>
 
     </main>
-    <section>
+    <section id="contato">
         <div class="callus">
             <p class="white">Contate nossa empresa</p>
             <p class="white">Ligue para nós estamos 24hrs prontos para lhe ajudar</p>
@@ -196,12 +196,12 @@
             </div>
             <div class="footerlinks">
                 <p>LINKS</p>
-                <a href="">SOBRE NOSSA EMPRESA</a>
-                <a href="">SERVIÇOS DE LOGISTICA</a>
-                <a href="">TermOS E CONDIÇÕES</a>
-                <a href="">POLITICA DE PRIVACIDADE</a>
+                <a href="#inicio">INÍCIO</a>
+                <a href="#sobre">SOBRE NOSSA EMPRESA</a>
+                <a href="#servicos">SERVIÇOS DE LOGÍSTICA</a>
+                <a href="#contato">CONTATO</a>
             </div>
-            <div class="footerlinks">
+            <div class="footerlinks" id="inscrever">
                 <p>SE INSCREVA</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minima eum dolorum, sapient.</p>
                 <input type="text" placeholder="Enter your email">

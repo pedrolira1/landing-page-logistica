@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -74,15 +78,19 @@ body {
     align-items: center;
 }
 
-.divtextos2.botao button {
+.divtextos2.botao .botao-card {
     background-color: rgb(36, 160, 160);
     color: white;
     width: 100px;
     height: 30px;
-    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 10pt;
 }
 
-.divtextos2.botao button:hover {
+.divtextos2.botao .botao-card:hover {
     cursor: pointer;
     background-color: rgb(18, 75, 75);
 }
@@ -283,16 +291,19 @@ section .telephone {
     color: white;
 }
 
-.titulo button {
+.titulo .botao-principal {
     width: 170px;
     height: 41px;
-    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(6, 202, 202);
     color: white;
+    text-decoration: none;
     border-radius: 5px;
 }
 
-.titulo button:hover {
+.titulo .botao-principal:hover {
     background-color: rgb(18, 75, 75);
     cursor: pointer;
 }
