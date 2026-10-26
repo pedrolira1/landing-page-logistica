@@ -34,6 +34,11 @@ body {
     width: 100%;
 }
 
+.conteudo .divtextos img {
+    width: 100%;
+    border-radius: 10px;
+}
+
 .center{
     display: flex;
     align-items: center;
@@ -163,8 +168,10 @@ footer .linha2 {
 }
 
 header {
-    background-image: url(images/banner1.jpg);
+    /* camada escura por cima da foto para o texto branco ficar legível */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(imagem/banner.jpg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -189,10 +196,11 @@ main {
     justify-content: space-evenly;
 }
 
-main .conteudo .divtextos2 .signature {
+main .conteudo .divtextos2 .selo {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 10px;
     height: 90px;
     justify-content: center;
 }
@@ -229,6 +237,10 @@ nav a:hover {
     align-items: center;
 }
 
+.navlogo img {
+    width: 32px;
+}
+
 .navlogo h1 {
     color: white;
 }
@@ -263,14 +275,16 @@ section .callus p:first-child {
     font-size: 16pt;
 }
 
-.signature img:first-child {
+.selo img {
+    width: 48px;
+    padding: 10px;
+    border: 2px solid rgb(36, 160, 160);
     border-radius: 100%;
-    width: 90px;
 }
 
-.signature img:nth-child(2) {
-    width: 120px;
-    height: 60px;
+.selo p {
+    color: rgb(36, 160, 160);
+    font-weight: bold;
 }
 
 section .telephone {
