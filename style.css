@@ -2,20 +2,30 @@ html {
     scroll-behavior: smooth;
 }
 
+/* faz a largura de cada elemento já incluir o padding e a borda */
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
 }
 
 .border{
     border: 1px solid rgb(235, 234, 234);
     border-radius: 10px;
-    height: 300px;
+    background-color: white;
 }
 
 .contato {
     width: 100%;
-    height: 60px;
+    padding: 0 5%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -23,15 +33,24 @@ body {
 
 .conteudo {
     width: 100%;
-    height: 350px;
+    padding: 50px 5%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
 }
 
 .conteudo .column {
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 30px;
+}
+
+.center{
+    display: flex;
+    align-items: stretch;
 }
 
 .conteudo .divtextos img {
@@ -39,60 +58,67 @@ body {
     border-radius: 10px;
 }
 
-.center{
-    display: flex;
-    align-items: center;
-}
-
 .conteudo .divtextos {
-    width: 375px;
+    flex: 1 1 320px;
+    max-width: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .conteudo .divtextos2 {
-    width: 265px;
+    flex: 1 1 250px;
+    max-width: 320px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
 .conteudo .estatistica {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 15px;
+    margin-bottom: 15px;
 }
 
 .conteudo .information {
     display: flex;
     flex-direction: row;
-    height: 160px;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-evenly;
+    gap: 30px;
 }
 
 .conteudo .informicon {
-    width: 194px;
-    height: 160px;
+    flex: 1 1 180px;
+    max-width: 240px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.conteudo .informicon h5 {
+    margin: 10px 0 0;
+}
+
+.conteudo .informicon p {
+    margin: 8px 0 0;
 }
 
 .divtextos2.botao .botao-card {
     background-color: rgb(36, 160, 160);
     color: white;
-    width: 100px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px 20px;
     text-decoration: none;
     font-size: 10pt;
+    border-radius: 5px;
 }
 
 .divtextos2.botao .botao-card:hover {
@@ -101,31 +127,34 @@ body {
 }
 
 .divtextos2.botao img:first-child {
-    width: 150px;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .emailtel {
-    width: 500px;
-    height: 50px;
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
 footer {
     width: 100%;
-    height: 250px;
+    padding: 30px 5% 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     background-color: black;
 }
 
 footer .footerlinks {
-    width: 30%;
+    flex: 1 1 250px;
+    max-width: 320px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     color: white;
 }
 
@@ -141,26 +170,36 @@ footer .footerlinks a {
     text-decoration: none;
 }
 
+footer .footerlinks a:hover {
+    color: white;
+}
+
 footer .footerlinks input {
     width: 100%;
-    height: 30px;
+    height: 36px;
+    padding: 0 10px;
     border: gray solid 0.5px;
     background-color: transparent;
+    color: white;
 }
 
 footer .linha1 {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 30px;
 }
 
 footer .linha2 {
     color: gray;
-    height: 40px;
     font-size: 10pt;
     width: 100%;
+    padding: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .gray {
@@ -181,19 +220,14 @@ header {
 
 .informtext {
     display: flex;
-    width: 194px;
-    height: 160px;
+    flex: 1 1 180px;
+    max-width: 240px;
     justify-content: center;
     align-items: center;
 }
 
 main {
     width: 100%;
-    height: 1600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
 }
 
 main .conteudo .divtextos2 .selo {
@@ -201,16 +235,15 @@ main .conteudo .divtextos2 .selo {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    height: 90px;
     justify-content: center;
 }
 
 .menu {
-    height: 60px;
-    width: 40%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10px 25px;
 }
 
 .menu a {
@@ -219,22 +252,22 @@ main .conteudo .divtextos2 .selo {
 }
 
 nav {
-    height: 60px;
     width: 100%;
+    padding: 0 5%;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav a:hover {
-    color: rgb(18, 75, 75);
+    color: rgb(6, 202, 202);
 }
 
 .navlogo {
-    height: 60px;
-    width: 150px;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    gap: 8px;
 }
 
 .navlogo img {
@@ -247,24 +280,41 @@ nav a:hover {
 
 .numeros {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    width: 156px;
-    height: 90px;
+    text-align: center;
+    gap: 5px;
+    flex: 1 1 120px;
+    padding: 10px;
     background-color: white;
+    border-radius: 10px;
+}
+
+.numeros h4 {
+    margin: 0;
+    font-size: 18pt;
+    color: rgb(36, 160, 160);
+    white-space: nowrap;
+}
+
+.numeros p {
+    margin: 0;
 }
 
 p {
     color: gray;
+    line-height: 1.5;
 }
 
 section {
     width: 100%;
-    height: 100px;
+    padding: 20px 5%;
     background-color: rgb(36, 160, 160);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    gap: 10px;
 }
 
 section .callus {
@@ -288,29 +338,25 @@ section .callus p:first-child {
 }
 
 section .telephone {
-    width: 20%;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    gap: 10px;
     color: white;
 }
 
 .titulo {
     width: 100%;
-    height: 300px;
+    padding: 80px 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: white;
 }
 
 .titulo .botao-principal {
-    width: 170px;
-    height: 41px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 12px 30px;
     background-color: rgb(6, 202, 202);
     color: white;
     text-decoration: none;
@@ -323,18 +369,65 @@ section .telephone {
 }
 
 .titulo p {
-    font-size: 26pt;
+    /* o tamanho acompanha a largura da tela, entre 22px e 35px */
+    font-size: clamp(22px, 5vw, 35px);
     color: white;
 }
 
 .topicones {
-    height: 50px;
-    width: 40%;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    gap: 8px;
     color: white;
+}
+
+.topimg img {
+    display: block;
 }
 
 .white {
     color: white;
+}
+
+/* celulares e telas pequenas */
+@media (max-width: 700px) {
+    .contato {
+        justify-content: center;
+    }
+
+    .emailtel {
+        justify-content: center;
+        gap: 0 20px;
+    }
+
+    .topicones p {
+        margin: 10px 0;
+        font-size: 10pt;
+    }
+
+    nav {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .navlogo h1 {
+        margin: 10px 0;
+    }
+
+    .titulo {
+        padding: 50px 5%;
+    }
+
+    .conteudo {
+        padding: 40px 20px;
+    }
+
+    .conteudo .divtextos2 {
+        max-width: 100%;
+    }
+
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
 }
