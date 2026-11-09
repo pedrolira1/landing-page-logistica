@@ -42,6 +42,22 @@ imagem/           → fotos
 imagem/icones/    → ícones SVG
 ```
 
+## Como este projeto foi desenvolvido
+
+Este projeto foi desenvolvido com o apoio do **Claude Code**, um assistente de programação com IA, usado da mesma forma que hoje se usa em equipes de desenvolvimento.
+
+**Minha parte no trabalho:**
+- Diagnóstico dos problemas da versão original e definição dos objetivos
+- Decisões de projeto: identidade da empresa fictícia, conteúdo, créditos e licenças das imagens
+- Revisão das mudanças, testes no navegador e em telas de celular
+- Versionamento com Git e publicação no GitHub Pages
+
+**O que aprendi:**
+- Diferença entre maiúsculas e minúsculas em nomes de arquivos em servidores Linux
+- Navegação por âncoras e rolagem suave
+- Layout responsivo com Flexbox e media queries
+- Fluxo de trabalho com Git: clone, commit e push
+
 ## Créditos
 
 - **Layout original:** template da [W3layouts](https://w3layouts.com/). O crédito também está no rodapé da página.
